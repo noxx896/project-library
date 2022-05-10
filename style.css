@@ -1,0 +1,44 @@
+/* Style */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Fredoka', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template: 1fr 1fr/1fr;
+}
+
+.header {
+  background-color: #fbbf24;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.header-title {
+  align-self: center;
+}
+
+#add-book-btn {
+  background-color: green;
+  display: inline-flex;
+  justify-content: center; /* center the content horizontally */
+  align-items: center; /* vertically */
+  align-self: flex-end;
+  height: 1rem;
+  width: 6rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+  border: none;;
+}
