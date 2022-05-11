@@ -15,9 +15,10 @@ ul {
 
 .container {
   display: grid;
-  grid-template: 1fr 1fr/1fr;
+  grid-template: auto 1fr/1fr;
 }
 
+/* ===== HEADER ===== */
 .header {
   background-color: #fbbf24;
   display: flex;
@@ -42,3 +43,51 @@ ul {
   color: white;
   border: none;;
 }
+/* ================ */
+
+/* ===== CONTENT ===== */
+.content {
+  background-color: #e5e7eb;
+  padding: 1rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book-card {
+  background-color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 3px rgb(175, 175, 175);
+  background-image: -webkit-linear-gradient(left, #3b82f6, #3b82f6 2%, transparent 2%, transparent 100%);
+  border-radius: 1rem;
+  width: 10rem;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.book-options {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+#mod-book-btn {
+  background-color: green;
+  border-radius: 1rem;
+  color: white;
+  border: none;
+  padding: 0.25rem;
+}
+
+#del-book-btn {
+  background-color: red;
+  border-radius: 1rem;
+  color: white;
+  border: none;
+  padding: 0.25rem;
+}
+
+/* ================ */
