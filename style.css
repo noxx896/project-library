@@ -64,9 +64,19 @@ ul {
   box-shadow: 0px 2px 3px rgb(175, 175, 175);
   background-image: -webkit-linear-gradient(left, #3b82f6, #3b82f6 2%, transparent 2%, transparent 100%);
   border-radius: 1rem;
-  width: 10rem;
+  width: 15rem;
   padding: 1rem;
   gap: 1rem;
+}
+
+.book-info-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.book-info-li {
+  white-space: pre-line;
+  white-space: pre-wrap;
 }
 
 .book-options {
