@@ -60,6 +60,11 @@ function newCard(book) {
 	// Set information about the Book
 	child21.textContent = book.title;
 	child22.textContent = book.showInfo();
+
+	// Delete button action
+	child5.addEventListener('click', function() {
+		container.removeChild(child);
+	});
 }
 
 function insertInfoCard() {
