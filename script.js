@@ -2,14 +2,14 @@
 
 let myLibrary = [];
 
-function Book(title, author, pages, read = false) {
+function Book(title = null, author = null, pages = null, read = false) {
 	this.title = title;
   this.author = author;
   this.pages = pages;
   this.read = read;
 }
 
-Book.prototype.addBookToLibrary = function() {
+Book.prototype.addBookToLibrary = function(newBook) {
 
 }
 
@@ -145,6 +145,17 @@ function insertInfoCard() {
 	insertBook.id = 'insert-book-btn';
 	insertBook.textContent = 'Insert book';
 	infoFields.appendChild(insertBook);
+
+	insertBook.addEventListener('click', function() {
+		let newBook = new Book(
+			titleFieldInput.value,
+			authorFieldInput.value,
+			pagesFieldInput.value,
+			readFieldInput.value
+			);
+		myLibrary.push(newBook);
+		newCard(myLibrary[myLibrary.length-1]);
+	});
 }
 
 // Display insert-info cards
